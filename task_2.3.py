@@ -19,10 +19,4 @@ def switch_it_up(number):
                    9: 'Nine'}
     return digits_dict.get(number)
 
-for digit in range(0, 11):
-    print(f'Задано число {digit}. ', end="")
-    result = switch_it_up(digit)
-    if result:
-        print(f'Произносится {result}.')
-    else:
-        print('Нет такого значения.')
+print(switch_it_up (int(input("Введите число "))))
